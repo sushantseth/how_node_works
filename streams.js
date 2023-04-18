@@ -2,7 +2,7 @@ const server = require('http').createServer()
 const fs = require('fs')
 
 server.on('request',(req,res)=>{
-    const readable = fs.createReadStream('./read-file.txt')
+    const readable = fs.createReadStream('./textFile.txt')
 
     // process 1
     // readable.on('data', chunk => {
